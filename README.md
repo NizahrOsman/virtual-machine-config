@@ -3,7 +3,7 @@
 </p>
 
 <h1>Deploying Virtual Machines Utilizing Microsoft Azure</h1>
-This tutorial outlines the implementation of Azure Virtual Machines. And the real life technical implementations as a help desk technician.<br />
+This tutorial outlines the deployment of Windows and Linux virtual machines in Microsoft Azure. It highlights the configuration of virtual networks, resource groups, and remote desktop access to simulate real world IT environments for help desk technicians.<br />
 
 
 
@@ -14,12 +14,13 @@ This tutorial outlines the implementation of Azure Virtual Machines. And the rea
   
 <h2>Operating Systems Used </h2>
 
-- Windows 10 (21H2)
+- Windows 10
+- Ubuntu (Linux)
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Create a subscription to seperate resource costs.
-- Create resource group to hold virtual machines. 
+- Create a subscription to separate resource costs.
+- Create a resource group to hold virtual machines. 
 - Create and assign virtual machines (Windows & Linux) to the same virtual network.
 - Log in via Remote Desktop and confirm connectivity.
 
@@ -27,7 +28,7 @@ This tutorial outlines the implementation of Azure Virtual Machines. And the rea
 
 <h3>1. Create a Resource Group</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1245" height="577" alt="image" src="https://github.com/user-attachments/assets/77ab7ea8-6123-421c-a868-bc3c4c074e01" />
 </p>
 
 <p>
@@ -39,13 +40,14 @@ The virtual network and virtual machines will both be stored in this group.
 
 <h3>2. Create a Virtual Network</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1047" height="895" alt="image" src="https://github.com/user-attachments/assets/c1d20420-3c9d-4bea-9ec6-b667d60e7274" />
+
 </p>
 <p>
-  Next create a Virtual Network (Vnet). 
+  Next create a Virtual Network (VNet). 
   This allows your VMs to:
   <ul>
-    <li>Recieve private IP address via DHCP</li>
+    <li>Receive private IP address via DHCP</li>
     <li>Communicate securely with each other</li>
     <li>Connect to the internet if needed</li>
   </ul>
@@ -55,29 +57,31 @@ The virtual network and virtual machines will both be stored in this group.
 
 <h3>3. Deploy Virtual Machines</h3>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="747" height="890" alt="image" src="https://github.com/user-attachments/assets/137d9072-5d41-4637-b70a-c3cef1b24b55" />
+
+
 </p>
 <p>
- When creating the virual machines: 
+ When creating the virtual machines: 
 </p>
      <ul>
-       <li>Name each VM clearly (windows-vm or linux-vm0</li>
+       <li>Name each VM clearly (windows-vm or linux-vm)</li>
        <li>Assign both VMs to the same region of the Virtual Network.</li>
-       <li>Choose the apporpriate operating system (Windows 10 & Ubuntu).</li>
+       <li>Choose the appropriate operating system (Windows 10 & Ubuntu).</li>
        <li>Set up authentication to allow secure Remote Desktop access.</li>
      </ul>
      <p>
        Once both machines are deployed, connect to the Windows VM using Remote Desktop Protocol and confirm connectivity with the Linux VM via ping.
-     </p>
-    This confirms both VMs are active, networked, and communicating properly.
+     </p>  
+  This confirms both VMs are active, networked, and communicating properly.
 <br />
 <h2>Real World Help Desk Application</h2>
  
  <h3>1. Simulating Real IT Environments</h3>
-     Familiarity in VM environments allows for help desk technicians to be fimiliar with diagnosis of issues, test updates in a controlled environment and setting up networks and understanding how they work in a large scale.
+     Deploying VM environments allows for help desk technicians to be familiar with resource management, diagnosing issues, testing updates in a controlled environment, setting up networks and understanding how they work at scale.
  <h3>2. Understanding Networking & Connectivity</h3>
    Help desk technicians need to understand basic networking concepts such as IP addressing, DNS, and network connectivity to troubleshoot when users can't access network resources.
  <h3>3. Practicing Secure Access & Permissions</h3>
-   Help desk technicians often assist with account creation, password resets, and remote access troubleshooting which are all essential for maintaining secrure and efficient operations.
+   Help desk technicians often assist with account creation, password resets, and remote access troubleshooting, which are all essential for maintaining secure and efficient operations.
  <h3>4. Efficient Resource Management</h3>
-  Mirrors how IT departments segment resources, like users, servers, and devices, by departments or projects in order to track usage, cost, and configurations more efficiently. 
+  This mirrors how IT departments organize resources, such as users, servers, and devices, by department or project to track usage, cost, and configurations more efficiently. 
